@@ -38,6 +38,7 @@ jobs:
       - run: |
           echo "Hi I'm on Runners!"
           echo "current working dir: $CIRCLE_WORKING_DIRECTORY"
+          echo "internal task data: $CIRCLE_INTERNAL_TASK_DATA"
           sleep 10
           ls /var/opt/circleci/workdir
           echo "finishing"
