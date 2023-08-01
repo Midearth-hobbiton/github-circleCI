@@ -35,4 +35,8 @@ jobs:
     machine: true
     resource_class: midearth-hobbiton/linux
     steps:
-      - run: echo "Hi I'm on Runners!"
+      - run: |
+          echo "Hi I'm on Runners!"
+          sleep 10
+          ls /var/opt/circleci
+          echo "finishing"
