@@ -38,5 +38,5 @@ jobs:
       - run: |
           echo "Hi I'm on Runners!"
           sleep 10
-          ls /var/opt/circleci
+          ls /var/opt/circleci/workdir
           echo "finishing"
