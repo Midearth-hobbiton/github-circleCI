@@ -35,6 +35,7 @@ jobs:
     machine: true
     resource_class: midearth-hobbiton/linux
     steps:
+      - checkout
       - run: |
           echo "Hi I'm on Runners!"
           echo "current working dir: $CIRCLE_WORKING_DIRECTORY"
