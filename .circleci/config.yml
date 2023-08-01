@@ -41,4 +41,5 @@ jobs:
           echo "internal task data: $CIRCLE_INTERNAL_TASK_DATA"
           sleep 10
           ls /var/opt/circleci/workdir
+          ls $CIRCLE_INTERNAL_TASK_DATA
           echo "finishing"
