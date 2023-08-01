@@ -37,6 +37,7 @@ jobs:
     steps:
       - run: |
           echo "Hi I'm on Runners!"
+          echo "current working dir: $CIRCLE_WORKING_DIRECTORY"
           sleep 10
           ls /var/opt/circleci/workdir
           echo "finishing"
