@@ -34,6 +34,9 @@ jobs:
   runner-test:
     # machine: true
     # resource_class: midearth-hobbiton/linux
+    docker:
+      - image: cimg/base:stable
+
     steps:
       - checkout
       - run: |
